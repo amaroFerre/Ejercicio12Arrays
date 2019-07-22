@@ -22,7 +22,7 @@ public class Ejercicio12 {
 
         int[] numeros = new int[10];
         int[] resultado = new int[10];
-        int posicionInicial;
+        int posicionInicial=0;
 
         int posicionFinal;
 
@@ -55,7 +55,31 @@ public class Ejercicio12 {
             valido  = true;
             
             System.out.println("Introduzca la posición inicial (0-9");
+            posicionInicial = entrada.nextInt();
             
+            //Valido el número introducido por teclado
+            
+            if ((posicionInicial<0) || (posicionInicial > 9)) {
+                
+                System.out.println("Valor incorrecto, debe ser un número entre 0 y 9");
+                valido = false;
+            }
+            
+            System.out.println("Introduzca la posción final (0-9)");
+            
+            posicionFinal = entrada.nextInt();
+            
+            if((posicionFinal<0 ) || (posicionFinal >0)) {
+                System.out.println("Valor incorrecto, debe ser un número entre 0 y 9");
+                
+                valido = false;
+                
+            }
+            if(posicionInicial >= posicionFinal){
+                System.out.println("Valores incorrectos, la posición inicial debe ser menor que la posición final.");
+                
+                valido = false;
+            }
             
         } while (!valido);
 
