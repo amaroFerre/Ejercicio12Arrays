@@ -34,21 +34,7 @@ public class Ejercicio12 {
 
         }
 
-        //Muestra el array original (Indice)
-        System.out.print("Indice----> ");
-        for (int i = 0; i < numeros.length; i++) {
-
-            System.out.print(i + " ");
-
-        }
-        System.out.println("");
-        System.out.print("Valor ----> ");
-
-        for (int i = 0; i < numeros.length; i++) {
-
-            System.out.print(numeros[i] + " ");
-
-        }
+       
         //pide las posiciones inicial y final
         do {
             
@@ -82,6 +68,23 @@ public class Ejercicio12 {
             }
             
         } while (!valido);
+        
+         //Muestra el array original (Indice)
+        System.out.print("Indice----> ");
+        for (int i = 0; i < numeros.length; i++) {
+
+            System.out.print(i + " ");
+
+        }
+        System.out.println("");
+        System.out.print("Valor ----> ");
+
+        for (int i = 0; i < numeros.length; i++) {
+
+            System.out.print(numeros[i] + " ");
+
+        }
+        
 
     }
 }
