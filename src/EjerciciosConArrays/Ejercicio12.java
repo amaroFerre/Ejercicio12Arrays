@@ -20,33 +20,38 @@ public class Ejercicio12 {
         int[] numeros = new int[10];
         int[] resultado = new int[10];
         int numeroInicial;
-        
+
         int numeroFinal;
-      
 
-            for (int i = 0; i < numeros.length; i++) {
-                //contador++;
-                numeros[i] = ES.leeEntero("Introdue los números");
-                
-            }
-            System.out.print("Indice----> ");
-            for (int i = 0; i < numeros.length; i++) {
-                
-                System.out.print(i+ " ");
-            
-        }
-            System.out.println("");
-            System.out.print("Valor ----> ");
-            
-            for (int i = 0; i < numeros.length; i++) {
-                
-                System.out.print(numeros[i]+ " ");
-            
+        boolean valido = true;
+
+        for (int i = 0; i < numeros.length; i++) {
+            //contador++;
+            numeros[i] = ES.leeEntero("Introdue los números");
+
         }
 
-        
-        
-        
+        //Muestra el array original (Indice)
+        System.out.print("Indice----> ");
+        for (int i = 0; i < numeros.length; i++) {
+
+            System.out.print(i + " ");
+
+        }
+        System.out.println("");
+        System.out.print("Valor ----> ");
+
+        for (int i = 0; i < numeros.length; i++) {
+
+            System.out.print(numeros[i] + " ");
+
+        }
+        //pide las posiciones inicial y final
+        do {
+            
+            valido  = true;
+
+        } while (true);
 
     }
 }
