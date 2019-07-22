@@ -19,19 +19,28 @@ public class Ejercicio12 {
 
         int[] numeros = new int[10];
         int[] resultado = new int[10];
-        int contador = 0;
-
+        int numeroInicial;
+        
+        int numeroFinal;
       
 
             for (int i = 0; i < numeros.length; i++) {
-                contador++;
+                //contador++;
                 numeros[i] = ES.leeEntero("Introdue los números");
                 
             }
-            System.out.print("Indice--> ");
+            System.out.print("Indice----> ");
             for (int i = 0; i < numeros.length; i++) {
                 
-                System.out.print(numeros[i] + " ");
+                System.out.print(i+ " ");
+            
+        }
+            System.out.println("");
+            System.out.print("Valor ----> ");
+            
+            for (int i = 0; i < numeros.length; i++) {
+                
+                System.out.print(numeros[i]+ " ");
             
         }
 
