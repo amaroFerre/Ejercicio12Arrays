@@ -19,9 +19,9 @@ public class Ejercicio12 {
 
         int[] numeros = new int[10];
         int[] resultado = new int[10];
-        int numeroInicial;
+        int posicionInicial;
 
-        int numeroFinal;
+        int posicionFinal;
 
         boolean valido = true;
 
@@ -50,8 +50,11 @@ public class Ejercicio12 {
         do {
             
             valido  = true;
-
-        } while (true);
+            
+            System.out.println("Introduzca la posición inicial (0-9");
+            
+            
+        } while (!valido);
 
     }
 }
