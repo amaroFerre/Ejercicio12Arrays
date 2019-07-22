@@ -1,5 +1,6 @@
 package EjerciciosConArrays;
 
+import java.util.Scanner;
 import utilidades.ES;
 
 /**
@@ -16,6 +17,8 @@ import utilidades.ES;
 public class Ejercicio12 {
 
     public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
 
         int[] numeros = new int[10];
         int[] resultado = new int[10];
